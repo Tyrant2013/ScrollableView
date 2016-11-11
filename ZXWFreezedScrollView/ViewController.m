@@ -26,67 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
-    
-    CGFloat screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
-    CGFloat screenHeight = CGRectGetHeight([UIScreen mainScreen].bounds);
-    CGFloat posY = 20.0f;
-    CGFloat offsetHeight = 300.0f;
-    
-    UIImage *image = [UIImage imageNamed:@"back.jpg"];
-    GPUImageGaussianBlurFilter *gaussianFilter = [[GPUImageGaussianBlurFilter alloc] init];
-    gaussianFilter.blurRadiusInPixels = 5.0f;
-    UIImage *blurImage = [gaussianFilter imageByFilteringImage:image];
-    
-    UIImageView *backImageView = [[UIImageView alloc] init];
-    backImageView.frame = (CGRect){0, posY, screenWidth, screenHeight - 20.0f};
-    backImageView.image = blurImage;
-    [self.view addSubview:backImageView];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"点啊" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    button.frame = (CGRect){0.0f, posY, screenWidth, offsetHeight};
-    [button addTarget:self action:@selector(buttonClick:)
-     forControlEvents:UIControlEventTouchUpInside];
-    
-    UIImageView *cubeImageView = [[UIImageView alloc] init];
-    cubeImageView.frame = (CGRect){0, 0, 150.0f, 150.0f};
-    cubeImageView.center = button.center;
-    UIImage *topImage = [UIImage imageNamed:@"cube.jpg"];
-    cubeImageView.image = topImage;
-    [self.view addSubview:cubeImageView];
-    [self.view addSubview:button];
-    
-    UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = (CGRect){0.0f, offsetHeight, screenWidth, screenHeight - 20.0f - offsetHeight};
-    [self.view addSubview:imageView];
-    self.imageView = imageView;
-    UIImage *moveImage = [self compoundImage:blurImage
-                                    topImage:topImage
-                                    backRect:backImageView.bounds
-                                        rect:cubeImageView.frame];
-    UIImage *moveBlurImage = [gaussianFilter imageByFilteringImage:moveImage];
-    imageView.image = moveBlurImage;
-    CGFloat unitY = offsetHeight / (screenHeight - 20.0f);
-    CGFloat unitH = (screenHeight - 20.0f - offsetHeight) / (screenHeight - 20.0f);
-    imageView.layer.contentsRect = (CGRect){0.0f, unitY, 1.0f, unitH};
-    imageView.layer.contentsScale = [UIScreen mainScreen].scale;
-    
-    IgnoreHeaderTableView *tableView = [[IgnoreHeaderTableView alloc] initWithFrame:(CGRect){0.0f, posY, screenWidth, screenHeight - 20.0f}];
-    tableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRect){0.0f, 0.0f, screenWidth, offsetHeight}];
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    tableView.tableHeaderView.backgroundColor = [UIColor clearColor];
-    tableView.backgroundColor = [UIColor clearColor];
-    tableView.scrollsToTop = NO;
-    tableView.showsVerticalScrollIndicator = NO;
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"aaa"];
-    [self.view addSubview:tableView];
-    
-    
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    
+    [self __initUI];
     
 //    ZXWFreezedScrollView *scrollView = [[ZXWFreezedScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    [self.view addSubview:scrollView];
@@ -157,6 +97,69 @@
     returnImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return returnImage;
+}
+
+- (void)__initUI {
+    CGFloat screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
+    CGFloat screenHeight = CGRectGetHeight([UIScreen mainScreen].bounds);
+    CGFloat viewHeight = screenHeight - 20.0f;
+    CGFloat posY = 20.0f;
+    CGFloat offsetHeight = 300.0f;
+    
+    UIImage *image = [UIImage imageNamed:@"back.jpg"];
+    GPUImageGaussianBlurFilter *gaussianFilter = [[GPUImageGaussianBlurFilter alloc] init];
+    gaussianFilter.blurRadiusInPixels = 5.0f;
+    UIImage *blurImage = [gaussianFilter imageByFilteringImage:image];
+    
+    UIImageView *backImageView = [[UIImageView alloc] init];
+    backImageView.frame = (CGRect){0, posY, screenWidth, viewHeight};
+    backImageView.image = blurImage;
+    [self.view addSubview:backImageView];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"点啊" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.frame = (CGRect){0.0f, posY, screenWidth, offsetHeight};
+    [button addTarget:self action:@selector(buttonClick:)
+     forControlEvents:UIControlEventTouchUpInside];
+    
+    UIImageView *cubeImageView = [[UIImageView alloc] init];
+    cubeImageView.frame = (CGRect){0, 0, 150.0f, 150.0f};
+    cubeImageView.center = button.center;
+    UIImage *topImage = [UIImage imageNamed:@"cube.jpg"];
+    cubeImageView.image = topImage;
+    [self.view addSubview:cubeImageView];
+    [self.view addSubview:button];
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.frame = (CGRect){0.0f, offsetHeight, screenWidth, viewHeight - offsetHeight};
+    [self.view addSubview:imageView];
+    self.imageView = imageView;
+    UIImage *moveImage = [self compoundImage:blurImage
+                                    topImage:topImage
+                                    backRect:backImageView.bounds
+                                        rect:cubeImageView.frame];
+    gaussianFilter.blurRadiusInPixels = 7.0f;
+    UIImage *moveBlurImage = [gaussianFilter imageByFilteringImage:moveImage];
+    imageView.image = moveBlurImage;
+    CGFloat unitY = offsetHeight / viewHeight;
+    CGFloat unitH = (viewHeight - offsetHeight) / viewHeight;
+    imageView.layer.contentsRect = (CGRect){0.0f, unitY, 1.0f, unitH};
+    imageView.layer.contentsScale = [UIScreen mainScreen].scale;
+    
+    IgnoreHeaderTableView *tableView = [[IgnoreHeaderTableView alloc] initWithFrame:(CGRect){0.0f, posY, screenWidth, viewHeight}];
+    tableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRect){0.0f, 0.0f, screenWidth, offsetHeight}];
+    tableView.dataSource = self;
+    tableView.delegate = self;
+    tableView.tableHeaderView.backgroundColor = [UIColor clearColor];
+    tableView.backgroundColor = [UIColor clearColor];
+    tableView.scrollsToTop = NO;
+    tableView.showsVerticalScrollIndicator = NO;
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"aaa"];
+    [self.view addSubview:tableView];
+    
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 
