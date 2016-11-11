@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F66E538BA11F9AE8C3C26E /* libPods-ZXWFreezedScrollViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C683504FFBAECD2A15181889 /* libPods-ZXWFreezedScrollViewTests.a */; };
+		60C10E905A919D58685DFC1E /* libPods-ZXWFreezedScrollViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33628423ED0B9AA213CC82AB /* libPods-ZXWFreezedScrollViewUITests.a */; };
+		622C02298661D34D03300460 /* libPods-ZXWFreezedScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAF52943C8F2BEBB1EFA117 /* libPods-ZXWFreezedScrollView.a */; };
 		EB19E44B1DD4134A00817518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19E44A1DD4134A00817518 /* main.m */; };
 		EB19E44E1DD4134A00817518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19E44D1DD4134A00817518 /* AppDelegate.m */; };
 		EB19E4511DD4134A00817518 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19E4501DD4134A00817518 /* ViewController.m */; };
@@ -18,6 +21,8 @@
 		EB19E47E1DD4137E00817518 /* ZXWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19E47D1DD4137E00817518 /* ZXWScrollView.m */; };
 		EB19E4811DD4145800817518 /* ZXWFreezedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19E4801DD4145800817518 /* ZXWFreezedScrollView.m */; };
 		EB19E4841DD452CA00817518 /* IgnoreHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19E4831DD452CA00817518 /* IgnoreHeaderTableView.m */; };
+		EB19E48B1DD5A8BA00817518 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB19E4891DD5A8BA00817518 /* back.jpg */; };
+		EB19E48C1DD5A8BA00817518 /* cube.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB19E48A1DD5A8BA00817518 /* cube.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07631656D6FA02859D8BB44F /* Pods-ZXWFreezedScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXWFreezedScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXWFreezedScrollView/Pods-ZXWFreezedScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		33628423ED0B9AA213CC82AB /* libPods-ZXWFreezedScrollViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXWFreezedScrollViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39388EE644D5A517DF6AADF3 /* Pods-ZXWFreezedScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXWFreezedScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXWFreezedScrollView/Pods-ZXWFreezedScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		91D30693E7ED524057B97D79 /* Pods-ZXWFreezedScrollViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXWFreezedScrollViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXWFreezedScrollViewUITests/Pods-ZXWFreezedScrollViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABAF52943C8F2BEBB1EFA117 /* libPods-ZXWFreezedScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXWFreezedScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6179DAD6F62FED74DD250B /* Pods-ZXWFreezedScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXWFreezedScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXWFreezedScrollViewTests/Pods-ZXWFreezedScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4EF51E33B7F7870AC3A6936 /* Pods-ZXWFreezedScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXWFreezedScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXWFreezedScrollViewTests/Pods-ZXWFreezedScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		C683504FFBAECD2A15181889 /* libPods-ZXWFreezedScrollViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXWFreezedScrollViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB8E9B8B2296F35A228C4A3 /* Pods-ZXWFreezedScrollViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXWFreezedScrollViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXWFreezedScrollViewUITests/Pods-ZXWFreezedScrollViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB19E4461DD4134A00817518 /* ZXWFreezedScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXWFreezedScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB19E44A1DD4134A00817518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB19E44C1DD4134A00817518 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +74,8 @@
 		EB19E4801DD4145800817518 /* ZXWFreezedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXWFreezedScrollView.m; sourceTree = "<group>"; };
 		EB19E4821DD452CA00817518 /* IgnoreHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgnoreHeaderTableView.h; sourceTree = "<group>"; };
 		EB19E4831DD452CA00817518 /* IgnoreHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgnoreHeaderTableView.m; sourceTree = "<group>"; };
+		EB19E4891DD5A8BA00817518 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		EB19E48A1DD5A8BA00817518 /* cube.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cube.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622C02298661D34D03300460 /* libPods-ZXWFreezedScrollView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F66E538BA11F9AE8C3C26E /* libPods-ZXWFreezedScrollViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +99,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C10E905A919D58685DFC1E /* libPods-ZXWFreezedScrollViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0785EF2C0860D23699A38200 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39388EE644D5A517DF6AADF3 /* Pods-ZXWFreezedScrollView.debug.xcconfig */,
+				07631656D6FA02859D8BB44F /* Pods-ZXWFreezedScrollView.release.xcconfig */,
+				AE6179DAD6F62FED74DD250B /* Pods-ZXWFreezedScrollViewTests.debug.xcconfig */,
+				C4EF51E33B7F7870AC3A6936 /* Pods-ZXWFreezedScrollViewTests.release.xcconfig */,
+				DFB8E9B8B2296F35A228C4A3 /* Pods-ZXWFreezedScrollViewUITests.debug.xcconfig */,
+				91D30693E7ED524057B97D79 /* Pods-ZXWFreezedScrollViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDE48DC67F033FF23F1BB845 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABAF52943C8F2BEBB1EFA117 /* libPods-ZXWFreezedScrollView.a */,
+				C683504FFBAECD2A15181889 /* libPods-ZXWFreezedScrollViewTests.a */,
+				33628423ED0B9AA213CC82AB /* libPods-ZXWFreezedScrollViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB19E43D1DD4134A00817518 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +136,8 @@
 				EB19E4621DD4134A00817518 /* ZXWFreezedScrollViewTests */,
 				EB19E46D1DD4134A00817518 /* ZXWFreezedScrollViewUITests */,
 				EB19E4471DD4134A00817518 /* Products */,
+				0785EF2C0860D23699A38200 /* Pods */,
+				BDE48DC67F033FF23F1BB845 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +154,8 @@
 		EB19E4481DD4134A00817518 /* ZXWFreezedScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				EB19E4891DD5A8BA00817518 /* back.jpg */,
+				EB19E48A1DD5A8BA00817518 /* cube.jpg */,
 				EB19E44C1DD4134A00817518 /* AppDelegate.h */,
 				EB19E44D1DD4134A00817518 /* AppDelegate.m */,
 				EB19E44F1DD4134A00817518 /* ViewController.h */,
@@ -162,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB19E4731DD4134A00817518 /* Build configuration list for PBXNativeTarget "ZXWFreezedScrollView" */;
 			buildPhases = (
+				6C4D63A02EFDE1A211D0BED9 /* [CP] Check Pods Manifest.lock */,
 				EB19E4421DD4134A00817518 /* Sources */,
 				EB19E4431DD4134A00817518 /* Frameworks */,
 				EB19E4441DD4134A00817518 /* Resources */,
+				A123F45312BA33E8BBA7D141 /* [CP] Embed Pods Frameworks */,
+				511E4C079CEDEBDBA52AE14C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB19E4761DD4134A00817518 /* Build configuration list for PBXNativeTarget "ZXWFreezedScrollViewTests" */;
 			buildPhases = (
+				648029D47A4B1E225078DB98 /* [CP] Check Pods Manifest.lock */,
 				EB19E45B1DD4134A00817518 /* Sources */,
 				EB19E45C1DD4134A00817518 /* Frameworks */,
 				EB19E45D1DD4134A00817518 /* Resources */,
+				1FE4B8F32642B9E089727963 /* [CP] Embed Pods Frameworks */,
+				CD022747ABE80EFD76BFC475 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB19E4791DD4134A00817518 /* Build configuration list for PBXNativeTarget "ZXWFreezedScrollViewUITests" */;
 			buildPhases = (
+				50F246FC43CCFEF02A8FE9C3 /* [CP] Check Pods Manifest.lock */,
 				EB19E4661DD4134A00817518 /* Sources */,
 				EB19E4671DD4134A00817518 /* Frameworks */,
 				EB19E4681DD4134A00817518 /* Resources */,
+				4FEEA459FA3224E06E870325 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,7 +276,7 @@
 				TargetAttributes = {
 					EB19E4451DD4134A00817518 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TGVFY564P5;
+						DevelopmentTeam = ZC726AK722;
 						ProvisioningStyle = Automatic;
 					};
 					EB19E45E1DD4134A00817518 = {
@@ -264,6 +318,8 @@
 			files = (
 				EB19E4591DD4134A00817518 /* LaunchScreen.storyboard in Resources */,
 				EB19E4561DD4134A00817518 /* Assets.xcassets in Resources */,
+				EB19E48C1DD5A8BA00817518 /* cube.jpg in Resources */,
+				EB19E48B1DD5A8BA00817518 /* back.jpg in Resources */,
 				EB19E4541DD4134A00817518 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +339,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FE4B8F32642B9E089727963 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXWFreezedScrollViewTests/Pods-ZXWFreezedScrollViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FEEA459FA3224E06E870325 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXWFreezedScrollViewUITests/Pods-ZXWFreezedScrollViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50F246FC43CCFEF02A8FE9C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		511E4C079CEDEBDBA52AE14C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXWFreezedScrollView/Pods-ZXWFreezedScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		648029D47A4B1E225078DB98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C4D63A02EFDE1A211D0BED9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A123F45312BA33E8BBA7D141 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXWFreezedScrollView/Pods-ZXWFreezedScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD022747ABE80EFD76BFC475 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXWFreezedScrollViewTests/Pods-ZXWFreezedScrollViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB19E4421DD4134A00817518 /* Sources */ = {
@@ -441,9 +620,10 @@
 		};
 		EB19E4741DD4134A00817518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39388EE644D5A517DF6AADF3 /* Pods-ZXWFreezedScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGVFY564P5;
+				DEVELOPMENT_TEAM = ZC726AK722;
 				INFOPLIST_FILE = ZXWFreezedScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.ZXWFreezedScrollView;
@@ -453,9 +633,10 @@
 		};
 		EB19E4751DD4134A00817518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07631656D6FA02859D8BB44F /* Pods-ZXWFreezedScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGVFY564P5;
+				DEVELOPMENT_TEAM = ZC726AK722;
 				INFOPLIST_FILE = ZXWFreezedScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.ZXWFreezedScrollView;
@@ -465,6 +646,7 @@
 		};
 		EB19E4771DD4134A00817518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6179DAD6F62FED74DD250B /* Pods-ZXWFreezedScrollViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZXWFreezedScrollViewTests/Info.plist;
@@ -477,6 +659,7 @@
 		};
 		EB19E4781DD4134A00817518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EF51E33B7F7870AC3A6936 /* Pods-ZXWFreezedScrollViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZXWFreezedScrollViewTests/Info.plist;
@@ -489,6 +672,7 @@
 		};
 		EB19E47A1DD4134A00817518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFB8E9B8B2296F35A228C4A3 /* Pods-ZXWFreezedScrollViewUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZXWFreezedScrollViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -500,6 +684,7 @@
 		};
 		EB19E47B1DD4134A00817518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D30693E7ED524057B97D79 /* Pods-ZXWFreezedScrollViewUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZXWFreezedScrollViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -528,6 +713,7 @@
 				EB19E4751DD4134A00817518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB19E4761DD4134A00817518 /* Build configuration list for PBXNativeTarget "ZXWFreezedScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +722,7 @@
 				EB19E4781DD4134A00817518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB19E4791DD4134A00817518 /* Build configuration list for PBXNativeTarget "ZXWFreezedScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +731,7 @@
 				EB19E47B1DD4134A00817518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

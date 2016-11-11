@@ -1,0 +1,12 @@
+PODS:
+  - GPUImage (0.1.7)
+
+DEPENDENCIES:
+  - GPUImage (~> 0.1.7)
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+
+PODFILE CHECKSUM: b32eea7f37c5bf3103edbfd5ef0b252fd3a3cae6
+
+COCOAPODS: 1.0.1
